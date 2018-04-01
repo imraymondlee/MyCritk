@@ -52,8 +52,8 @@ $("#runJSON").click(function () {
 //    $("div").css("background-color", "transparent");
 //    $("div:contains(" + res + ")").css("background-color", "yellow");
     
-      $('div.comment').fadeOut();
-    $("div:contains(" + res + ")").fadeIn();
+    $('#comment-scroll div.comment').fadeOut();
+    $("#comment-scroll div:contains(" + res + ")").fadeIn();
     
     $.getJSON(url + res, function(data) {
     //data is the JSON string

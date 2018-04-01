@@ -21,7 +21,7 @@
 <body>
 	<header>
 		<div id="logo">
-			<a href = "index.php"><h1>MyCritk</h1></a>
+			<a href = "index.php"><h1 class = "nav-header">MyCritk</h1></a>
 		</div>
 		<nav>
 			<ul>
@@ -32,10 +32,15 @@
 		</nav>
 	</header>
 
-
+    <div class="container-max">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>Heatmap and Annotation</h1>
+            </div>
+        </div>
+    </div>
 
 	<div class = "heatmap_container">
-		<h2>Heatmap & Annotation</h2>
 		<div class = "row">
 			<div class = "eight columns">
 				<div class = "heatmap">
@@ -44,10 +49,18 @@
 					<div id = "overlay-images"></div>
 				</div>
 			</div>
+
+
 			<div class = "four columns">
-
-
 				<div class = "feedback_row row feedback-images">
+                    <div class="comment">
+                        <h2 class="comment-head">Images are mediocre</h2>
+                        <p class="comment-body">I don't have many suggestions for your images but I think they could be improved.</p>
+                    </div>
+
+
+
+					
 					<div class = "feedback_card">
 						<div class = "row">
 							<div class = "twelve columns">
@@ -87,7 +100,7 @@
 				</div>
 
 				<div style = "text-align: center;">
-					<button id = "view_all">View All Feedback</button>
+					<button id = "view_all" class = "button-primary">View All Feedback</button>
 				</div>
 
 
