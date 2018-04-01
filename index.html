@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Comments</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/main2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+</head>
+
+<body>
+    <div class="container-max">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>Feedback Analysis Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-half">
+        <div class="row">
+            <div class="twelve columns">
+                <button id="runJSON">Get Data</button>
+                <input id="custom-topics">
+                <div id="topics-head">
+                    <h3>Search Result</h3>
+                    <div id="topics-content"></div>
+                </div>
+                <div id="comments-summary">
+                    <h3>Popular Topics</h3>
+                    <div id="comments-content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Annotations &amp; Heatmap</h3>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <img id="heatmap" src="images/heatmap-overlay.png" />
+                </div>
+                <div class="six columns">
+                    <div class="heatmap-gradient"><span id="fewer">Fewer Comments</span><span id="more">More Comments</span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button-primary">VIEW HEATMAP</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Highest Rated</h3>
+                <div class="comment">
+                    <h2 class="comment-head">Looks nice, but doesn't work</h2>
+                    <p class="comment-body">Your navigation is broken and it is hard to see.</p>
+                </div>
+
+                <div class="comment">
+                    <h2 class="comment-head">Love the use of color</h2>
+                    <p class="comment-body">Amazing colors in your design. Use less green and more red.</p>
+                </div>
+
+                <div class="comment">
+                    <h2 class="comment-head">Terrible, terrible, terrible</h2>
+                    <p class="comment-body">I think you should restart. This is not working for you. Navigation is terrible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-half" id="rightbar">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 id="rightbar-title">All Comments</h2>
+                <h2 id="search-item"></h2>
+                <div id="comment-scroll">
+                    <div class="comment">
+                        <h2 class="comment-head">Looks nice, but doesn't work</h2>
+                        <p class="comment-body">Your navigation is broken and it is hard to see.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Love the use of color</h2>
+                        <p class="comment-body">Amazing colors in your design. Use less green and more red.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Terrible, terrible, terrible</h2>
+                        <p class="comment-body">I think you should restart. This is not working for you. Navigation is terrible.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Menu design is weak</h2>
+                        <p class="comment-body">Why is your menu blue? You should make it red instead.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Good colors</h2>
+                        <p class="comment-body">Amazing palette.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">I wish you made it more user-friendly</h2>
+                        <p class="comment-body">Your website is not intuitive and it is hard to use especially the menu.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Text is too large</h2>
+                        <p class="comment-body">Please make the text smaller.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Your text is hard to read</h2>
+                        <p class="comment-body">I can't read the text on your website.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">I think your layout is okay</h2>
+                        <p class="comment-body">The layout is average.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Not enough images</h2>
+                        <p class="comment-body">Your current images don't offer much. Try adding more effective or illustrative images.</p>
+                    </div>
+
+                    <div class="comment">
+                        <h2 class="comment-head">Images are mediocre</h2>
+                        <p class="comment-body">I don't have many suggestions for your images but I think they could be improved.</p>
+                    </div>
+
+                </div>
+                <br>
+                <button class="button-primary">VIEW ALL COMMENTS (164)</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
