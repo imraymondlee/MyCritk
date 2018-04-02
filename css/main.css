@@ -101,6 +101,12 @@ nav ul li a:hover{
     padding: 15px;
 }
 
+.comment-scroll{
+    overflow-y: scroll;
+    height: 75%;
+    border-left: 2px solid lightgray;
+}
+
 .container-half h3{
     margin-bottom: 12px;
     border-bottom: 1px solid lightgray;
