@@ -87,6 +87,11 @@ nav ul li a:hover{
 }
 
 /*Feedback*/
+
+.new-comment{
+    display: none;
+}
+
 .comment{
     background: #eaeaea;
     border-radius: 8px;
@@ -121,7 +126,11 @@ form{
 	margin-bottom: 0;
 }
 
-textarea{
+#new-comment-head{
+    width: 100%;
+}
+
+#new-comment-body{
 	width: 100%;
 	height: 10rem;
 }
@@ -189,7 +198,34 @@ textarea{
 	display: block;
 }
 
+.heatmap-gradient{
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 100%;
+    height: 35px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+17,96dd0f+45,cca500+74,cc5e00+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 17%, #96dd0f 45%, #cca500 74%, #cc5e00 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ffffff 17%,#96dd0f 45%,#cca500 74%,#cc5e00 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ffffff 17%,#96dd0f 45%,#cca500 74%,#cc5e00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cc5e00',GradientType=1 ); /* IE6-9 */
+}
+
+#fewer{
+    position: absolute;
+    top: 110%;
+    left: 0;
+}
+
+#more{
+    position: absolute;
+    top: 110%;
+    right: 0;
+}
+
 /*Annotate*/
 .toggle_annotate{
 	border: 3px solid black;
 }
+

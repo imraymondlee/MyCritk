@@ -26,7 +26,6 @@ $(function() {
 			$(this).siblings(".feedback_score").text(score);
 		}
 
-
 	});
 
 
@@ -50,6 +49,14 @@ $(function() {
 		$("#view_all").show();
 	});
 
+	$("#overlay-nav").hover(function(){
+		$('#overlay-nav').css( 'cursor', 'pointer' );
+	});
+
+	$("#overlay-images").hover(function(){
+		$('#overlay-images').css( 'cursor', 'pointer' );
+	});
+
 	//Annotation
 	$(".feedback-nav").hover(function(){
 		$("#overlay-nav").toggleClass("toggle_annotate");
@@ -62,5 +69,20 @@ $(function() {
 	$("#view_all").click(function(){
 		$(".feedback_row").show();
 		$("#view_all").hide();
+	});
+
+
+	// New Comment
+	$("#post-new-comment").click(function(){
+		var head = $('#new-comment-head').val();
+		var body = $('#new-comment-body').val();
+
+		console.log(head + body);
+
+		$('#comment-head').text(head);
+		$('#comment-body').text(body);
+
+		$(".new-comment").show();
+
 	});
 });

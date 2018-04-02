@@ -13,15 +13,13 @@
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<link rel="icon" type="image/png" href="images/favicon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script src="js/analyze.js"></script> -->
 	<script src="js/main.js"></script>
 </head>
 <body>
 	<header>
 		<div id="logo">
-			<a href = "index.php"><h1 class = "nav-header">MyCritk</h1></a>
+			<a href = "feedback.html"><h1 class = "nav-header">MyCritk</h1></a>
 		</div>
 		<nav>
 			<ul>
@@ -35,66 +33,231 @@
 
     <div class="container-max">
         <div class="row">
-            <div class="twelve columns">
-                <h1>Feedback Analysis Dashboard</h1>
+            <div class="eight columns">
+                <h1>Feedback</h1>
+            </div>
+            <div class="four columns">
+                <a class="button-primary button" href = "dashboard.html" style = "float: right; margin: 2rem;">DASHBOARD</a>
             </div>
         </div>
     </div>
 
-	<div class = "container-max">
+    <div class = "container-max">
 
-		<div class = "feedback_row row">
-			<div class = "feedback_card">
-				<div class = "row">
-					<h2>Leave Feedback</h2>
-					<form id = >
-						<textarea></textarea>
-						<br><input type="submit" value="Submit" class = "button-primary button">
-					</form>
-				</div>
-			</div>
-		</div>
-
-
-	        <div class="comment">
-				<div class = "row">
-					<div class = "ten columns">
-	            		<h2 class="comment-head">Looks nice, but doesn't work</h2>
-	            		<p class="comment-body">Your navigation is broken and it is hard to see.</p>
-	        		</div>
-	        		<div class = "two columns">
-						<div class = "upvote_feedback">
-							<button class="upvote upvote_btn">Helpful</button>
-							<br>
-							<span class = "feedback_score">5</span> points
-						</div>
-					</div>
-	        	</div>
-	        </div>
+      <div class = "feedback_row row">
+         <div class = "feedback_card">
+            <div class = "row">
+               <h2>Leave Feedback</h2>
+               <form>
+                    <input type="text" id = "new-comment-head">
+                    <textarea id = "new-comment-body"></textarea>
+                    <br><button type='button' id = "post-new-comment" class = "button-primary button">SUBMIT</button>
+              </form>
+          </div>
+      </div>
+  </div>
 
 
-	        <div class="comment">
-				<div class = "row">
-					<div class = "ten columns">
-	            		<h2 class="comment-head">Love the use of color</h2>
-	            		<p class="comment-body">Amazing colors in your design. Use less green and more red.</p>
-	        		</div>
-	        		<div class = "two columns">
-						<div class = "upvote_feedback">
-							<button class="upvote upvote_btn">Helpful</button>
-							<br>
-							<span class = "feedback_score">5</span> points
-						</div>
-					</div>
-	        	</div>
-	        </div>
+  <div class="comment new-comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 id="comment-head" class = "comment-head">head</h2>
+            <p id="comment-body">comment</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">0</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Looks nice, but doesn't work</h2>
+            <p class="comment-body">Your navigation is broken and it is hard to see.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">15</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Love the use of color</h2>
+            <p class="comment-body">Amazing colors in your design. Use less green and more red.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">83</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Terrible, terrible, terrible</h2>
+            <p class="comment-body">I think you should restart. This is not working for you. Navigation is terrible.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">12</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Menu design is weak</h2>
+            <p class="comment-body">Why is your menu white? You should make it red instead.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">7</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Good colors</h2>
+            <p class="comment-body">Amazing palette.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">24</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">I wish you made it more user-friendly</h2>
+            <p class="comment-body">Your website is not intuitive and it is hard to use especially the menu.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">12</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Text is too large</h2>
+            <p class="comment-body">Please make the text smaller.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">42</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Your text is hard to read</h2>
+            <p class="comment-body">I can't read the text on your website.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">63</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">I think your layout is okay</h2>
+            <p class="comment-body">The layout is average.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">32</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Not enough images</h2>
+            <p class="comment-body">Your current images don't offer much. Try adding more effective or illustrative images.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">12</span> points
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="comment">
+    <div class = "row">
+        <div class = "ten columns">
+            <h2 class="comment-head">Images are mediocre</h2>
+            <p class="comment-body">I don't have many suggestions for your images but I think they could be improved.</p>
+        </div>
+        <div class = "two columns">
+            <div class = "upvote_feedback">
+                <button class="upvote upvote_btn">Helpful</button>
+                <br>
+                <span class = "feedback_score">26</span> points
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
 
 
-	</div>
+</div>
 
 
 </body>
