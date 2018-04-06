@@ -235,3 +235,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	border: 3px solid black;
 }
 
+.project-img{
+    margin: auto;
+    text-align: center;
+}
+
+.project-img img{
+    width: 50%;
+    box-shadow: 2px 2px 5px #888888;
+}
