@@ -45,5 +45,39 @@ $(function(){
         
     });
     
+     $("#view-3").change(function(){
+        var src= $("#view-3 option:selected").attr("value");
+        var version = $("#view-3 option:selected").attr("name");
+        $("#imgcomp3").attr("src", "images/" + src + ".jpg");
+        $("#happybar3").css("width", happy[version]);
+        $("#mehbar3").css("width", meh[version]);
+        $("#sadbar3").css("width", sad[version]);
+        
+        $("#topics-p3 p").html(words_p[version]);
+        $("#topics-m3 p").html(words_m[version]);
+        $("#topics-n3 p").html(words_s[version]);
+        
+        $("#comment3 h2").html(comment_title[version]);
+        $("#comment3 p").html(comment_body[version]);
+        
+    });
+    
+     $("#view-4").change(function(){
+        var src= $("#view-4 option:selected").attr("value");
+        var version = $("#view-4 option:selected").attr("name");
+        $("#imgcomp4").attr("src", "images/" + src + ".jpg");
+        $("#happybar4").css("width", happy[version]);
+        $("#mehbar4").css("width", meh[version]);
+        $("#sadbar4").css("width", sad[version]);
+        
+        $("#topics-p4 p").html(words_p[version]);
+        $("#topics-m4 p").html(words_m[version]);
+        $("#topics-n4 p").html(words_s[version]);
+        
+        $("#comment4 h2").html(comment_title[version]);
+        $("#comment4 p").html(comment_body[version]);
+        
+    });
+    
     
 });
